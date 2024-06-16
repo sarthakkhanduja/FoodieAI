@@ -21,7 +21,10 @@ prompt = ChatPromptTemplate.from_messages(
 
 # StreamLit Framework
 
+# Set the layout to wide mode and set the page title
+st.set_page_config(page_title="FoodieAI - Your Recipe Assistant")
 st.title('FoodieAI')
+
 ingredients = st.text_input("Please enter the list of ingredients separated by a comma", key="ingredients")
 nutri_value = st.text_input("Please enter any specific type of nutritional value you would prefer in your recipe (such as, protein-rich, less-sugar, etc.)", key="nutri_value")
 cuisine = st.text_input("Do you have any cuisine preference?", key="cuisine")
