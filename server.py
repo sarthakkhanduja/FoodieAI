@@ -48,5 +48,3 @@ if st.button("Get Recipe"):
         st.write(response)
     else:
         st.write("Please enter the list of ingredients to get a recipe.")
-
-
